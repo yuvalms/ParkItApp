@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".regisrationProvider"
+    android:background="#00c2cb"
+    android:backgroundTintMode="add"
+    android:foregroundTint="#FFFFFF">
+
+
+
+  <ImageView
+      android:id="@+id/imageView2"
+      android:layout_width="0dp"
+      android:layout_height="176dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="238dp"
+      app:layout_constraintBottom_toTopOf="@+id/businessName"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/guideline11"
+      app:layout_constraintStart_toStartOf="parent"
+      app:srcCompat="@drawable/patkbgg" />
+
+  <LinearLayout
+      android:id="@+id/linearLayout2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toTopOf="@+id/imageView2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/businessName"
+      android:layout_width="330dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="168dp"
+      android:background="#00c2cb"
+      android:backgroundTint="#FCF3F5F6"
+      android:ems="10"
+      android:gravity="center|right"
+      android:hint="שם עסק"
+      android:inputType="textPersonName"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.716"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/BnNumber"
+      android:layout_width="330dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="56dp"
+      android:layout_marginTop="16dp"
+      android:background="#00c2cb"
+      android:backgroundTint="#FCF3F5F6"
+      android:ems="10"
+      android:gravity="center|right"
+      android:hint="מספר ח.פ"
+      android:inputType="number"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/businessName" />
+
+  <EditText
+      android:id="@+id/businessPassword"
+      android:layout_width="330dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="16dp"
+      android:background="#00c2cb"
+      android:backgroundTint="#FCF3F5F6"
+      android:ems="10"
+      android:gravity="center|right"
+      android:hint="סיסמא"
+      android:inputType="textPassword"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.691"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/BnNumber" />
+
+  <EditText
+      android:id="@+id/businessPhone"
+      android:layout_width="330dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="56dp"
+      android:layout_marginTop="16dp"
+      android:background="#00c2cb"
+      android:backgroundTint="#FCF3F5F6"
+      android:ems="10"
+      android:gravity="center|right"
+      android:hint="טלפון "
+      android:inputType="phone"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/businessPassword" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="20dp" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toStartOf="@+id/guideline5"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="20dp" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toStartOf="@+id/guideline7"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintStart_toEndOf="@+id/guideline3" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="20dp" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline7"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toStartOf="@+id/guideline9"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintStart_toEndOf="@+id/guideline5" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline8"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="20dp" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline9"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toStartOf="@+id/guideline11"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintStart_toEndOf="@+id/guideline7" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline10"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="20dp" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline11"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toStartOf="@+id/imageView2"
+      app:layout_constraintGuide_begin="20dp"
+      app:layout_constraintStart_toEndOf="@+id/guideline9" />
+
+  <EditText
+      android:id="@+id/businessMail"
+      android:layout_width="330dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="56dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="25dp"
+      android:background="#00c2cb"
+      android:backgroundTint="#FCF3F5F6"
+      android:ems="10"
+      android:gravity="center|right"
+      android:hint="כתובת מייל"
+      android:inputType="textEmailAddress"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/businessPhone" />
+
+  <Spinner
+      android:id="@+id/business_type"
+      android:layout_width="0dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="16dp"
+      android:background="#00c2cb"
+      android:backgroundTint="#FCF3F5F6"
+      android:ems="10"
+      android:gravity="center|right"
+      android:hint="סוג עסק"
+      app:layout_constraintEnd_toEndOf="@+id/businessAddress"
+      app:layout_constraintStart_toStartOf="@+id/businessAddress"
+      app:layout_constraintTop_toBottomOf="@+id/businessMail" />
+
+  <EditText
+      android:id="@+id/businessAddress"
+      android:layout_width="330dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="58dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginEnd="24dp"
+      android:layout_marginBottom="52dp"
+      android:background="#00c2cb"
+      android:backgroundTint="#FCF3F5F6"
+      android:ems="10"
+      android:gravity="center|right"
+      android:hint="כתובת בית העסק"
+      android:inputType="textPostalAddress"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/business_type"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <CheckBox
+      android:id="@+id/businessCheckBox"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="34dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="25dp"
+      android:buttonTint="#FCF3F5F6"
+      android:text="ידוע לי כי המידע אודותיי ישמר במערכת כפוף למידיניות הפרטיות"
+      android:textAlignment="textEnd"
+      android:textSize="12sp"
+      app:layout_constraintBottom_toTopOf="@+id/businessRegiester"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/businessAddress" />
+
+  <Button
+      android:id="@+id/businessRegiester"
+      style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+      android:layout_width="181dp"
+      android:layout_height="64dp"
+      android:layout_marginStart="136dp"
+      android:layout_marginEnd="94dp"
+      android:backgroundTint="@color/white"
+      android:fontFamily="@font/open_sans_light"
+      android:gravity="center"
+      android:text="הרשמה"
+      android:textColor="#00c2cb"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:cornerRadius="25dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/businessCheckBox"
+      app:spinning_bar_color="#00c2cb" />
+
+  <TextView
+      android:id="@+id/businessLetsMeet"
+      android:layout_width="175dp"
+      android:layout_height="53dp"
+      android:layout_marginStart="38dp"
+      android:layout_marginTop="63dp"
+      android:layout_marginEnd="25dp"
+      android:layout_marginBottom="52dp"
+      android:backgroundTint="#FFFFFF"
+      android:fontFamily="@font/open_sans_light"
+      android:text="בואו נכיר!"
+      android:textColor="#FFFFFF"
+      android:textSize="35sp"
+      app:layout_constraintBottom_toTopOf="@+id/businessName"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/imageView2"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

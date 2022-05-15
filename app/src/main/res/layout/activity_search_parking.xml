@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00c2cb"
+    android:backgroundTintMode="add"
+    android:foregroundTint="#FFFFFF"
+    tools:context=".SearchParking">
+
+    <TextView
+        android:id="@+id/businessLetsMeet2"
+        android:layout_width="202dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/open_sans_light"
+        android:hint="הזן שעת התחלה ושעת סיום:"
+        android:text="חיפוש חנייה:"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/businessName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="84dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/home"
+        tools:layout_editor_absoluteX="327dp"
+        tools:layout_editor_absoluteY="-4dp" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="349dp"
+        android:layout_height="332dp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="123dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPostalAddress"
+        android:layout_width="301dp"
+        android:layout_height="50dp"
+        android:background="#00c2cb"
+        android:backgroundTint="#FCF3F5F6"
+        android:ems="10"
+        android:gravity="center|right"
+        android:hint="לאן נוסעים?"
+        android:inputType="textPostalAddress"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="479dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="53dp"
+        android:layout_height="52dp"
+        app:srcCompat="@drawable/search"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="477dp" />
+
+    <EditText
+        android:id="@+id/editTextTime3"
+        android:layout_width="92dp"
+        android:layout_height="41dp"
+        android:background="#00c2cb"
+        android:backgroundTint="#FCF3F5F6"
+        android:ems="10"
+        android:inputType="time"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="612dp" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="92dp"
+        android:layout_height="41dp"
+        android:background="#00c2cb"
+        android:backgroundTint="#FCF3F5F6"
+        android:ems="10"
+        android:inputType="time"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="612dp" />
+
+    <TextView
+        android:id="@+id/businessLetsMeet3"
+        android:layout_width="211dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="576dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/open_sans_light"
+        android:text="הזן שעת התחלה ושעת סיום:"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/businessName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reports">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="385dp"
+        android:layout_height="655dp"
+        android:layout_marginTop="40dp"
+        android:background="#00c2cb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/myparking"
+        android:layout_width="123dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="112dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/open_sans_light"
+        android:text="החניות שלי"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/myreports"
+        android:layout_width="123dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="112dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/open_sans_light"
+        android:text="הדיווחים שלי"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toStartOf="@+id/myparking" />
+
+    <TextView
+        android:id="@+id/parking2"
+        android:layout_width="101dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="152dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/open_sans_light"
+        android:text="דוחות"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="84dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="198dp"
+        android:layout_height="238dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/reports" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="125dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/myreports"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/like" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="128dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/myparking"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:srcCompat="@drawable/parki2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
